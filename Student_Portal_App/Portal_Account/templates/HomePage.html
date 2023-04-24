@@ -1,0 +1,284 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>EMSI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="{% static "assets_home/img/favicon.png" %}" rel="icon" > -->
+  <link href="{% static "assets_home/img/apple-touch-icon.png"  %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static "assets_home/vendor/animate.css/animate.min.css" %}" rel="stylesheet" >
+  <link href="{% static "assets_home/vendor/aos/aos.css" %}" rel="stylesheet" >
+  <link href="{% static "assets_home/vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+  <link href="{% static "assets_home/vendor/bootstrap-icons/bootstrap-icons.css" %}" rel="stylesheet">
+  <link href="{% static "assets_home/vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet">
+  <link href="{% static "assets_home/vendor/remixicon/remixicon.css" %}" rel="stylesheet">
+  <link href="{% static "assets_home/vendor/swiper/swiper-bundle.min.css" %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static "assets_home/css/style.css"  %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v4.7.0
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href=""><img src="{% static "assets_home/img/logo_EMSI.png" %}" style="width: 250px; height: 50px;" class="logo me-auto" ></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="{% static "index.html" class="logo me-auto"><img src="{% static"{% static "assets_home/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0" style="margin-left: 300px;">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#counts">Statics</a></li>
+          <li><a href="#why-us">Courses</a></li>
+          <li><a href="#trainers">Campuses</a></li>
+          <li><a href="#footer">Contact</a></li>
+          <li class="dropdown"><a><span>LogIn</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/admin/">Master</a></li>
+              <li><a href="/Staff_log/">Staff</a></li>
+              <li><a href="/Teacher_log/">Teacher</a></li>
+              <li><a href="/Student_log/">Student</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center" style=" background-image: url(https://www.emsi.ma/wp-content/uploads/2021/07/Slider-EMSI-35ans-2.jpg);  overflow: hidden; height: 200%; width: 100%;  z-index: 20; opacity: 1; visibility: visible; " >
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100" >
+      <h1 style="color: beige;"><span style="text-shadow: 0 0 10px black; ">Learning Today,</span><br><span style="text-shadow: 0 0 10px black; ">Leading Tomorrow</span></h1>
+      <h2 style=" color: beige"><span style="text-shadow: 0 0 10px black; ">Recognized By The Moroccan State From 2017</span></h2>
+      <a href="courses.html" class="btn-get-started" style=" color: beige;"><span style="text-shadow: 0 0 10px black; ">Join US</span></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="https://www.emsi.ma/wp-content/uploads/2020/07/MMPT5309-scaled.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h5>EMSI IS A MEMBER OF THE 1st PAN-AFRICAN PRIVATE HIGHER EDUCATION NETWORK HONORIS UNITED UNIVERSITIES OFFICIALLY SINCE JANUARY 2018.</h5>
+            <p class="fst-italic">
+                Since its creation in 1986, the Moroccan School of Engineering Sciences has focused its educational project on the quality of its training and on the high employability of its graduates. The academic excellence of its faculty, its observatory of professions and the integration of technological developments have contributed to establishing its notoriety. The school takes a strong interest in research, development and innovation. It makes every effort to carry loud and clear the ambitions and ideals of our country in terms of invention. In this sense, it aspires to continue to represent it honorably in prestigious international events. For 34 years at the service of the Moroccan economy, EMSI aims to contribute to the development of the continent and the training of future Pan-African leaders.
+            </p>
+        
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+        <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="+7000" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Students</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="13000" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Alumni</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Campuses</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter">Years</span>
+            <p>Experience</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="width: 100%;">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" >
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Software Engineering</h4>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Industrial Engineering</h4>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Civil Engineering</h4>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <i class="bx bx-cube-alt"></i>
+                      <h4>Financial Engineering</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <i class="bx bx-cube-alt"></i>
+                      <h4>Automation And Industrial IT Engineering</h4>
+                    </div>
+                  </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+    <!-- ======= Trainers Section ======= -->
+    <section id="trainers" class="trainers">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static "assets_home/img/casa.jpg" %}" class="img-fluid" alt="" style="height:265px ;">
+              <div class="member-content">
+                <h4>CasaBlanca</h4>
+                <span>4 Campuses</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static "assets_home/img/campus-agdal.png" %}" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Rabat</h4>
+                <span>4 Campuses</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static "assets_home/img/EMSI-Marrakech-4x3-1.png" %}" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Marrakech</h4>
+                <span>2 Campuses</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Trainers Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact" style="text-align: justify; margin-right: 500px;">
+            <h3>Contact US :</h3><br><br>
+            <p style="text-align: justify; font-size:medium;">
+               
+              <strong>Phone:</strong>   +212-522-992323<br>
+              <strong>Email:</strong>   informations@emsi.ma<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact" style="text-align: justify;">
+            <h3>Courses :</h3><br>
+            <p style="font-size:large; text-align: justify; color: green;">
+                <strong>Software Engineering</strong><br><br>
+                <strong>Industrial Engineering</strong><br><br>
+                <strong>Civil Engineering</strong><br><br>
+                <strong>Financial Engineering</strong><br><br>
+                <strong>Automation And Industrial IT Engineering</strong><br><br><br>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>EMSI</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://web.facebook.com/emsi.ma/?_rdc=1&_rdr" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/groupe.emsi/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/ecole-marocaine-des-sciences-de-l'ing%C3%A9nieur/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static "assets_home/vendor/purecounter/purecounter.js" %}"></script>
+  <script src="{% static "assets_home/vendor/aos/aos.js" %}"></script>
+  <script src="{% static "assets_home/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+  <script src="{% static "assets_home/vendor/swiper/swiper-bundle.min.js" %}"></script>
+  <script src="{% static "assets_home/vendor/php-email-form/validate.js" %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static "assets_home/js/main.js" %}"></script>
+
+</body>
+
+</html>

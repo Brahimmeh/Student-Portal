@@ -1,0 +1,245 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mark List Page</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="{% static "assets/vendors/mdi/css/materialdesignicons.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/vendors/flag-icon-css/css/flag-icon.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/vendors/css/vendor.bundle.base.css" %}">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="{% static "assets/vendors/font-awesome/css/font-awesome.min.css"  %}"/>
+    <link rel="stylesheet" href="{% static "assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" %}">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="{% static "assets/css/style.css" %}">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="{% static "assets/images/favicon.png"  %}"/>
+  </head>
+  <body>
+    <div class="container-scroller">
+      <div class="row p-0 m-0 proBanner" id="proBanner">
+        <div class="col-md-12 p-0 m-0">
+          <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="https://www.bootstrapdash.com/product/connect-plus-bootstrap-admin-template/"><i class="mdi mdi-home me-3 text-white"></i></a>
+              <button id="bannerClose" class="btn border-0 p-0">
+                <i class="mdi mdi-close text-white me-0"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="HomP"><img style="width: 160px; height: 70px;" src="{% static "assets/images/logo..jfif" alt="logo"  %}"/></a>
+          
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Welcome {{ user.first_name }} {{ user.last_name }}</p>
+                </div>
+              </a>
+              
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav" style="padding-top: 20px;">
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+                <span class="menu-title">Education</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="see_enrolled_course">Enrolled Courses</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="see_sub_stud">Subjects List</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basica" aria-expanded="false" aria-controls="ui-basic">
+                <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+                <span class="menu-title">Complaint List</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basica">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="Add_complaint_stud">Fill a Complaint</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="list_com_stud">List of Filled Complaints</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="show_note_stud">
+                <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
+                <span class="menu-title">Administrative Notes</span>
+              </a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="show_mark_list_stud">
+                  <span class="icon-bg"><i class="mdi mdi-table-large menu-icon"></i></span>
+                  <span class="menu-title">Mark List</span>
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="show_att_list_stud">
+                <span class="icon-bg"><i class="mdi mdi-table-large menu-icon"></i></span>
+                <span class="menu-title">Attendance List</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="{% static "pages/tables/basic-table.html" %}">
+                <span class="icon-bg"><i class="mdi mdi-table-large menu-icon"></i></span>
+                <span class="menu-title">View Attendance</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="{% static "#auth" %}" aria-expanded="false" aria-controls="auth">
+                <span class="icon-bg"><i class="mdi mdi-lock menu-icon"></i></span>
+                <span class="menu-title">Student Complaint</span>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <!-- <a class="nav-link" data-bs-toggle="collapse" href="{% static "#auth" %}" aria-expanded="false" aria-controls="auth">
+                <span class="icon-bg"><i class="mdi mdi-lock menu-icon"></i></span>
+                <span class="menu-title">Staff Complaint</span>
+              </a> -->
+              <!-- <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="{% static "pages/samples/blank-page.html" %}"> Blank Page </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{% static "pages/samples/login.html" %}"> Login </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{% static "pages/samples/register.html" %}"> Register </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{% static "pages/samples/error-404.html" %}"> 404 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{% static "pages/samples/error-500.html" %}"> 500 </a></li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item documentation-link">
+              
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="user-details">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="d-flex align-items-center">
+                      <div class="sidebar-profile-text">
+                        <p class="mb-1">Student {{ user.first_name }} {{ user.last_name }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="/logout" class="nav-link"><i class="mdi mdi-logout menu-icon"></i>
+                  <span class="menu-title">Log Out</span></a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper" style="padding-left:30px; padding-right: 25px;">
+            <div class="page-header">
+              <h3 class="page-title"> Mark List </h3>
+              <h4 class="card-title">Student Transcript of : {{ user.first_name }} {{ user.last_name }}</h4>
+            </div>
+          
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card" >
+                <div class="card">
+                  <div class="card-body" >
+                    {% for subject in subjects %}
+                    <br>
+                    <h4 class="card-title">{{ subject.subject_name }}</h4>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> ID </th>
+                          <th> Subject Name </th>
+                          <th> Teacher Name </th>
+                          <th> Mark </th>
+                          <th> Updated Date </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          {% for mark in marks %}
+                             {% if mark.subject_id == subject %}
+                              <tr>
+                               <td>{{ mark.id }}</td>
+                               <td>{{ mark.subject_id.subject_name }}</td>
+                               <td>{{ mark.teacher_id.admin.first_name }} {{ mark.teacher_id.admin.last_name }}</td>
+                               <td>{{ mark.value}}</td>
+                               <td>{{ mark.updated_at }}</td>
+                              </tr>
+                              {% endif %}
+                          {% endfor %}
+                      </tbody>
+                    </table>
+                    <div>
+
+                      
+                    </div>
+                    {% endfor %}
+                  </div>
+                  
+                  <br>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+         
+          <!-- partial -->
+        </div>
+          
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="{% static "assets/vendors/js/vendor.bundle.base.js" %}"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="{% static "assets/vendors/chart.js/Chart.min.js" %}"></script>
+    <script src="{% static "assets/vendors/jquery-circle-progress/js/circle-progress.min.js" %}"></script>
+    <script src="{% static "assets/js/jquery.cookie.js" %}" type="text/javascript"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="{% static "assets/js/off-canvas.js" %}"></script>
+    <script src="{% static "assets/js/hoverable-collapse.js" %}"></script>
+    <script src="{% static "assets/js/misc.js" %}"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="{% static "assets/js/dashboard.js" %}"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
